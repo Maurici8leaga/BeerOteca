@@ -2,14 +2,26 @@ import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/Card/Card";
 import s from "./style.module.css";
+import { BEER_DATA } from "./api/data";
 
 function App() {
-	const [count, setCount] = useState(0);
+	const [beerData, setBeerData] = useState("");
+
+	const findElementById = (id, array) => {
+		return array.find((element) => element.id === id);
+	};
+
+	const prueba = (item) => {
+		// console.log(item, "esta escogiste");
+		const beerSelected = findElementById(item, BEER_DATA);
+		setBeerData(beerSelected);
+		console.log(beerSelected, "esta");
+	};
 
 	return (
 		<div className={s.app}>
 			<div className="container">
-				<Navbar />
+				<Navbar data={BEER_DATA} funcion={prueba} />
 				<div className="row justify-content-center">
 					<div className={s.header}>
 						<h1 className={s.title}>Welcome to BeerOteca</h1>
@@ -18,7 +30,7 @@ function App() {
 						</p>
 						<button
 							type="button"
-							class="btn btn-outline-light btn-sm"
+							className="btn btn-outline-light btn-sm"
 							data-bs-toggle="offcanvas"
 							data-bs-target="#offcanvasNavbar"
 							aria-controls="offcanvasNavbar"
@@ -27,7 +39,8 @@ function App() {
 						</button>
 					</div>
 					<div>
-						<Card />
+						{beerData && <Card beerInfo={beerData} />}
+						{/* <Card beerInfo={beerData} /> */}
 					</div>
 				</div>
 			</div>

@@ -2,7 +2,7 @@ import React from "react";
 import ListItem from "../ListItem/ListItem";
 import s from "./style.module.css";
 
-const Navbar = () => {
+const Navbar = ({ data, funcion }) => {
 	return (
 		<div>
 			<nav className="navbar navbar-dark bg-transparent fixed-top">
@@ -42,8 +42,18 @@ const Navbar = () => {
 							</div>
 							<div className="offcanvas-body">
 								<ul className="navbar-nav flex-grow-1 pe-3">
-									<ListItem title="Orval" />
-									<ListItem title="La Chouffe (Blonde)" />
+									{data.map((beer) => {
+										const { name, img, id } = beer;
+										return (
+											<ListItem
+												title={name}
+												img={img}
+												key={id}
+												id={id}
+												funcion={funcion}
+											/>
+										);
+									})}
 								</ul>
 							</div>
 						</div>

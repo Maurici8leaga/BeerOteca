@@ -1,6 +1,6 @@
 export const BEER_DATA = [
 	{
-		id: beer_01,
+		id: 12345,
 		name: "Leffe (Blonde)",
 		country: "Belgium",
 		brewery: "Abbaye de Leffe S.A",
@@ -11,7 +11,7 @@ export const BEER_DATA = [
 			"Leffe Blond is an authentic blond abbey beer with a slight hint of bitterness to it. It is delicate but characteristic, Leffe Blonde is the tasting beer par excellence: it gives an extra touch of flavor to simple dishes and lightly accompanies your fried foods.",
 	},
 	{
-		id: beer_02,
+		id: 23456,
 		name: "La Chouffe (Blonde)",
 		country: "Belgium",
 		brewery: "Brasserie d'Achouffe",
@@ -22,7 +22,7 @@ export const BEER_DATA = [
 			"La Chouffe, with its slight hoppy taste, combining notes of fresh coriander and fruity tones, is the drink which gives them their zest for life.",
 	},
 	{
-		id: beer_03,
+		id: 34567,
 		name: "Kunstmanm Honig Ale",
 		country: "Chile",
 		brewery: "Compania Cervecera Kunstmann, S.A",
@@ -33,7 +33,7 @@ export const BEER_DATA = [
 			"The sweetness of the honey is appreciated subtly integrating itself between the toasted tones of the malt, with a soft bitterness as a counterpoint. Light amber in color, with sweet and malty notes with a hint of spice. Generally very sweet.",
 	},
 	{
-		id: beer_04,
+		id: 45678,
 		name: "Gulden Draak Smoked",
 		country: "Belgium",
 		brewery: "Brouwerij Van Steenberge N.V",
@@ -44,7 +44,7 @@ export const BEER_DATA = [
 			"The Gulden Draak Smoked , It has a deep dark brown color with a smoky malt aroma and is Smoky in flavor with sweet notes of caramel, chocolate and black berries with light-sweet and smoky finishing touches.",
 	},
 	{
-		id: beer_05,
+		id: 56789,
 		name: "Modelo (Negra)",
 		country: "Mexico",
 		brewery: "Grupo Modelo S.A. de C.V",
@@ -55,7 +55,7 @@ export const BEER_DATA = [
 			"Negra Modelo,  is a Munich-type beer with 5.3º of alcohol that offers a balanced flavor and a delicate aroma of dark malt, caramel and hops.",
 	},
 	{
-		id: beer_06,
+		id: 67890,
 		name: "Kross Stout",
 		country: "Chile",
 		brewery: "Kross Microbrew Beer (Southern Brewing Company)",
@@ -66,7 +66,7 @@ export const BEER_DATA = [
 			"Kross stout,  is a traditional style of beer of Irish origin, characterized by its intense flavors of caramel, roasted coffee and dark chocolate. Its deep, distinctive dark ruby color and creamy head are the result of producing Pilsen, Caramel and Toast barley malts in small quantities.",
 	},
 	{
-		id: beer_07,
+		id: 78901,
 		name: "Duvel",
 		country: "Belgium",
 		brewery: "Brouwerij Duvel Moortgat NV",
@@ -77,7 +77,7 @@ export const BEER_DATA = [
 			"Duvel is lively and tingling on the nose with a citrus element that even tends towards grapefruit thanks to the use of the highest quality hop varieties. This is also reflected in the taste, which is beautifully balanced with a hint of spiciness. Thanks to its high CO2 content, this beer has a wonderful roundness on the palate.",
 	},
 	{
-		id: beer_08,
+		id: 89012,
 		name: "Orval Trappist Ale",
 		country: "Belgium",
 		brewery: "Brasserie d'Orval S.A",
@@ -88,7 +88,7 @@ export const BEER_DATA = [
 			"Orval Trappist Ale, the ageing process adds a fruity note, which strikes a subtle balance between the beer’s full-bodied yet complex flavour and bitterness. The brewery has selected very aromatic and unique hop varieties, which hark back to the first brewmaster of Orval, who hailed from Bavaria. The beer’s aromas are very pronounced while maintaining the right level of bitterness thanks to the English method of dry hopping.",
 	},
 	{
-		id: beer_09,
+		id: 90123,
 		name: "Chimay Bleue (Blue)",
 		country: "Belgium",
 		brewery: "Bières de Chimay",
@@ -99,7 +99,7 @@ export const BEER_DATA = [
 			"Chiamy Bleue, when pouring it presents a dark brown color with long-lasting ivory foam. Chimay Blue pumps out extremely complex aromas of whole wheat bread, molasses, dark fruits, and spices that lead to a rich palate with remarkable alcoholic warmth.",
 	},
 	{
-		id: beer_10,
+		id: 10123,
 		name: "Benediktiner Weissbier",
 		country: "Germany",
 		brewery: "Klosterbrauerei Ettal",

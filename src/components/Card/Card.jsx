@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./style.module.css";
 
-const Card = () => {
+const Card = ({ beerInfo }) => {
+	const { country, brewery, type, abv, notes, img } = beerInfo;
 	return (
 		<div className="card bg-transparent">
 			<div className={s.cardGlass}>
@@ -9,7 +10,7 @@ const Card = () => {
 					<div className="col-md-6">
 						<div className={s.imgContainer}>
 							<img
-								src="./public/images-data/orval-beer.jpeg"
+								src={`./public/images-data/${img}`}
 								className={s.cardImg}
 								alt="beer image"
 							/>
@@ -18,15 +19,11 @@ const Card = () => {
 					<div className="col-md-6">
 						<div className="card-body py-5">
 							<h5 className="card-title text-center">Beer title</h5>
-							<p className="card-text">Country :</p>
-							<p className="card-text">Brewery : </p>
-							<p className="card-text">Type : </p>
-							<p className="card-text">Abv : </p>
-							<p className="card-text">
-								Tasting Notes : This is a wider card with supporting text below
-								as a natural lead-in to additional content. This content is a
-								little bit longer.
-							</p>
+							<p className="card-text">Country : {country}</p>
+							<p className="card-text">Brewery : {brewery}</p>
+							<p className="card-text">Type : {type}</p>
+							<p className="card-text">Abv : {abv}</p>
+							<p className="card-text">Tasting Notes : {notes}</p>
 						</div>
 					</div>
 				</div>
