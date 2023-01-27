@@ -11,26 +11,36 @@ function App() {
 		return array.find((element) => element.id === id);
 	};
 
-	const prueba = (item) => {
-		// console.log(item, "esta escogiste");
-		const beerSelected = findElementById(item, BEER_DATA);
+	// function to take the id of choice beer
+	const takeIdBeer = (id) => {
+		const beerSelected = findElementById(id, BEER_DATA);
 		setBeerData(beerSelected);
-		console.log(beerSelected, "esta");
 	};
 
 	return (
 		<div className={s.app}>
 			<div className="container">
-				<Navbar data={BEER_DATA} funcion={prueba} />
+				<Navbar
+					data={BEER_DATA}
+					takeIdBeer={takeIdBeer}
+					setBeerData={setBeerData}
+				/>
 				<div className="row justify-content-center">
-					<div className={s.header}>
+					<div
+						className={s.header}
+						// para darle un css condicional usamos el state para poder crear la condicionn, los valores se deben colocar
+						// en backticks `` si no toma los valores
+						style={{
+							padding: beerData ? `100px 0 50px 0` : `350px 0 50px 0`,
+						}}
+					>
 						<h1 className={s.title}>Welcome to BeerOteca</h1>
-						<p className="h5">
+						<p className="h5 pb-4">
 							Where you can learn all about you favorite beer
 						</p>
 						<button
 							type="button"
-							className="btn btn-outline-light btn-sm"
+							className="btn btn-outline-light"
 							data-bs-toggle="offcanvas"
 							data-bs-target="#offcanvasNavbar"
 							aria-controls="offcanvasNavbar"
@@ -38,10 +48,8 @@ function App() {
 							Search for a beer
 						</button>
 					</div>
-					<div>
-						{beerData && <Card beerInfo={beerData} />}
-						{/* <Card beerInfo={beerData} /> */}
-					</div>
+					{/* si el state de beer tiene algo mostrara el card si no, sera vacio */}
+					<div>{beerData && <Card beerInfo={beerData} />}</div>
 				</div>
 			</div>
 		</div>

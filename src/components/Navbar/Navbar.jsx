@@ -2,12 +2,13 @@ import React from "react";
 import ListItem from "../ListItem/ListItem";
 import s from "./style.module.css";
 
-const Navbar = ({ data, funcion }) => {
+const Navbar = (props) => {
+	const { data, takeIdBeer, setBeerData } = props;
 	return (
 		<div>
 			<nav className="navbar navbar-dark bg-transparent fixed-top">
 				<div className="container-fluid">
-					<a className="navbar-brand" href="#">
+					<a className="navbar-brand" href="#" onClick={() => setBeerData("")}>
 						BeerOteca
 					</a>
 					<button
@@ -50,7 +51,7 @@ const Navbar = ({ data, funcion }) => {
 												img={img}
 												key={id}
 												id={id}
-												funcion={funcion}
+												takeIdBeer={takeIdBeer}
 											/>
 										);
 									})}
