@@ -4,6 +4,7 @@ import s from "./style.module.css";
 const ListItem = (props) => {
 	const { title, img, id, takeIdBeer } = props;
 
+	// function to get the beer id
 	const selectIdBeer = () => {
 		takeIdBeer(id);
 	};
@@ -14,6 +15,7 @@ const ListItem = (props) => {
 				<figure className={s.imgThumbnail} onClick={selectIdBeer}>
 					<img src={`./images-data/${img}`} alt="beer item" className={s.img} />
 				</figure>
+
 				<span className="h6 d-flex text-light align-items-center">{title}</span>
 			</div>
 			<hr />

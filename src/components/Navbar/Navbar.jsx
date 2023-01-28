@@ -4,12 +4,14 @@ import s from "./style.module.css";
 
 const Navbar = (props) => {
 	const { data, takeIdBeer, setBeerData } = props;
+
 	return (
 		<nav className="navbar navbar-dark bg-transparent fixed-top">
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#" onClick={() => setBeerData("")}>
 					BeerOteca
 				</a>
+
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -19,6 +21,7 @@ const Navbar = (props) => {
 				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
+
 				<div
 					className="offcanvas offcanvas-end bg-transparent"
 					tabIndex="-1"
@@ -33,6 +36,7 @@ const Navbar = (props) => {
 							>
 								BEER LIST
 							</h5>
+
 							<button
 								type="button"
 								className="btn-close btn-close-white"
@@ -40,6 +44,7 @@ const Navbar = (props) => {
 								aria-label="Close"
 							></button>
 						</span>
+
 						<div className="offcanvas-body">
 							<ul className="navbar-nav flex-grow-1 pe-3">
 								{data.map((beer) => {
