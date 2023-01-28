@@ -9,3 +9,13 @@
 	height: 100%;
 	object-fit: contain;
 }
+
+hr {
+	margin: 0px;
+	color: var(--white);
+}
+
+hr:hover {
+	color: var(--yellow);
+	opacity: 1;
+}

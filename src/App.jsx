@@ -25,8 +25,8 @@ function App() {
 					takeIdBeer={takeIdBeer}
 					setBeerData={setBeerData}
 				/>
-				<div className="row justify-content-center">
-					<div
+				<main className="row justify-content-center">
+					<header
 						className={s.header}
 						// para darle un css condicional usamos el state para poder crear la condicionn, los valores se deben colocar
 						// en backticks `` si no toma los valores
@@ -47,10 +47,10 @@ function App() {
 						>
 							Search for a beer
 						</button>
-					</div>
+					</header>
 					{/* si el state de beer tiene algo mostrara el card si no, sera vacio */}
-					<div>{beerData && <Card beerInfo={beerData} />}</div>
-				</div>
+					<section>{beerData && <Card beerInfo={beerData} />}</section>
+				</main>
 			</div>
 		</div>
 	);
