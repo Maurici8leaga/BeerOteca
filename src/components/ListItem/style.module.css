@@ -1,0 +1,21 @@
+.imgThumbnail {
+	width: 50px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+hr {
+	margin: 0px;
+	color: var(--white);
+}
+
+hr:hover {
+	color: var(--yellow);
+	opacity: 1;
+}
